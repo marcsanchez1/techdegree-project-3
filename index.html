@@ -5,10 +5,123 @@
     <title>Project 3 | Marc Sanchez</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    
-   
+    <header>
+      <h1 class="page-title">The Code Review</h1>
+    </header>
+    <main class="main-container">
+      <div class="signup-intro">
+        <p class="signup-title">Signup for our newsletter</h1>
+        <p class="signup-text">Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+      <form action="index.html" method="POST">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Required" required>
+
+          <label for="user-email">Email Address</label>
+          <input type="email" id="user-email" name="email" placeholder="Required" required>
+
+          <label for="user_telephone">Phone Number</label>
+          <input type="number" id="user_telephone" name="phone">
+
+          <label for="user-address">Street Address</label>
+          <input type="text" id="user-address" name="address">
+
+          <label for="user-city">City</label>
+          <input type="text" id="user-city" name="city">
+
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option name="choose-state" value="Choose State">Choose State</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="District of Columbia">District of Columbia</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Guam">Guam</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Northern Marianas Islands">Northern Marianas Islands</option>
+            <option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Virgin Islands">Virgin Islands</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+          </select>
+          <label for="zip-code">Zip Code</label>
+          <input type="number" id="zip-code" name="zip-code">
+        </fieldset>
+        
+        <hr>
+
+        <fieldset>
+          <legend>Newsletter</legend>
+          <label>Select the newsletters you would like to receive</label>
+          <input type="checkbox" id="HTML-news" name="HTML-news"><label for="HTML-news" class="checkbox-radio">HTML News</label><br>
+          <input type="checkbox" id="CSS-news" name="CSS-news"><label for="CSS-news" class="checkbox-radio">CSS News</label><br>
+          <input type="checkbox" id="javascript-news" name="javascript-news"><label for="javascript-news" class="checkbox-radio">Javascript News</label><br>
+
+          <label>Newsletter format</label>
+          <input type="radio" id="HTML" name="newsletter-format"><label for="HTML" class="checkbox-radio">HTML</label><br>
+          <input type="radio" id="plain-text" name="newsletter-format"><label for="plain-text" class="checkbox-radio">Plain Text</label>
+
+          <label>Other topics you'd like to hear about</label>
+          <textarea id="comment" name="user-comment" maxlength="280" placeholder="Maximum 280 Characters"></textarea>
+
+          <button type="submit">Sign Up</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+        <div class="copyright">
+          &copy;2019. Marc Sanchez. All rights reserved.
+        </div>
+      </footer>
   </body>
 </html>

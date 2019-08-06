@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: #2d3945;
+  line-height: 1.6;
+}
+
+/* ======================================
+                 BASE STYLES
+ ======================================== */
+
+header {
+  background: #2d3945;
+}
+
+h1.page-title {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  padding: 27px 0;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.main-container {
+  display: block;
+  margin: 0 15px;
+}
+
+.main-container .signup-intro {
+  max-width: 100%;
+  text-align: center;
+  margin: 30px auto;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #2d3945;
+  color: #2d3945;
+}
+
+.main-container .signup-title {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main-container .signup-text {
+  padding: 12px 0 35px;
+  margin: auto;
+  font-size: 1.2em;
+  color: rgba(44, 56, 67, .5);
+  border-bottom: 4px solid #2d3945;
+}
+
+form {
+  width: 100%;
+  margin: auto;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  background-color: #eff0f1;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  color: #2d3945;
+  font-size: 1em;
+  padding: 15px;
+  transition: .5s ease-in-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #46698b;
+}
+
+input[id="zip-code"] {
+  width: 150px;
+}
+
+::placeholder {
+  text-align: right;
+  padding-right: 20px;
+  font-style: italic;
+  opacity: .5;
+}
+
+hr {
+  border: 2px solid #2d3945;
+  margin: 10px 0 30px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-bottom: 12px;
+}
+
+.checkbox-radio {
+  display: inline;
+  margin-left: 15px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: 700;
+}
+
+input[id*="javascript-news"],
+input[id*="plain-text"] {
+  margin-bottom: 30px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4ebbb5;
+  color: #FFF;
+  font-size: 2em;
+  padding: 25px;
+  font-family: initial;
+  border-radius: 5px;
+}
+
+footer {
+  margin: 30px 0 200px;
+}
+
+.copyright {
+  text-align: center;
+  color: #9da3a8;
+  font-style: italic;
+}
+
+@media (min-width: 769px) {
+  
+  form ,
+  .main-container .signup-intro {
+    max-width: 60%;
+  }
+}
+
+
