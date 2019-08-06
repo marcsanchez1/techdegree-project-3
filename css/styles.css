@@ -229,7 +229,7 @@ footer {
 
   input[id="zip-code"] {
     width: 25%;
-    margin-right: 320px;
+    margin-right: 315px;
   }
 
   .remove-top-margin { /* Removes the margin-top added to form label */
